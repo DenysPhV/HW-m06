@@ -11,17 +11,17 @@ MP4_MEDIA = []
 MOV_MEDIA = []
 MKV_MEDIA = []
 
+MP3_MUSIC = []
+OGG_MUSIC = []
+WAV_MUSIC = []
+AMR_MUSIC = []
+
 DOC_DOCUMENT = []
 DOCX_DOCUMENT = []
 TXT_DOCUMENT = []
 PDF_DOCUMENT = []
 XLSX_DOCUMENT = []
 PPTX_DOCUMENT = []
-
-MP3_MEDIA = []
-OGG_MEDIA = []
-WAV_MEDIA = []
-AMR_MEDIA = []
 
 ZIP_ARCHIVES = []
 GZ_ARCHIVES = []
@@ -30,7 +30,7 @@ TAR_ARCHIVES = []
 DIFFERENT = []
 
 
-REGISTER_EXTENSIONS = {'JPEG': JPEG_IMAGES, 'PNG': PNG_IMAGES, 'JPG': JPG_IMAGES, 'SVG':SVG_IMAGES, 'AVI':AVI_MEDIA, 'MP4':MP4_MEDIA, 'MOV': MOV_MEDIA, 'MKV':MKV_MEDIA, 'DOC':DOC_DOCUMENT, 'DOCX': DOCX_DOCUMENT, 'TXT': TXT_DOCUMENT, 'PDF': PDF_DOCUMENT, 'XLSX': XLSX_DOCUMENT, 'PPTX': PPTX_DOCUMENT, 'MP3': MP3_MEDIA, 'OGG': OGG_MEDIA, 'WAV': WAV_MEDIA, 'AMR': AMR_MEDIA, 'ZIP': ZIP_ARCHIVES, 'GZ': GZ_ARCHIVES, 'TAR': TAR_ARCHIVES}
+REGISTER_EXTENSIONS = {'JPEG': JPEG_IMAGES, 'PNG': PNG_IMAGES, 'JPG': JPG_IMAGES, 'SVG':SVG_IMAGES, 'AVI':AVI_MEDIA, 'MP4':MP4_MEDIA, 'MOV': MOV_MEDIA, 'MKV':MKV_MEDIA, 'DOC':DOC_DOCUMENT, 'DOCX': DOCX_DOCUMENT, 'TXT': TXT_DOCUMENT, 'PDF': PDF_DOCUMENT, 'XLSX': XLSX_DOCUMENT, 'PPTX': PPTX_DOCUMENT, 'MP3': MP3_MUSIC, 'OGG': OGG_MUSIC, 'WAV': WAV_MUSIC, 'AMR': AMR_MUSIC, 'ZIP': ZIP_ARCHIVES, 'GZ': GZ_ARCHIVES, 'TAR': TAR_ARCHIVES}
 
 FOLDERS = []
 EXTENSIONS = set()
@@ -65,15 +65,5 @@ if __name__ == '__main__':
     print(f'Start in folder {folder_for_scan}')
 
     scan(Path(folder_for_scan))
-    # print(f'images jpeg: {JPEG_IMAGES}')
-
-
-    # print(f'Images jpeg: {JPEG_IMAGES}')
-    # print(f'Images jpg: {JPG_IMAGES}')
-    # print(f'Images svg: {SVG_IMAGES}')
-
-
-    # print(f'Types of files in folder: {EXTENSIONS}')
-    # print(f'Unknown files of types: {UNKNOWN}')
 
     print(FOLDERS[::-1])
