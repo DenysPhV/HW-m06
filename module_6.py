@@ -1,5 +1,0 @@
-# Homework
-import pathlib
-
-
-
