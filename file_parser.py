@@ -57,11 +57,14 @@ def move_to_category_folder(src: str, destination: str):
     shutil.move(src, destination_filepath)
 
 
+# to work for is function !!!!  
 def arrange_files_sorting_in_folder(target_path: str, destination_folder: str = None):
+
     if destination_folder is None:
         destination_folder = target_path
 
-    inner_files = os.listdir(target_path)
+        inner_files = os.listdir(target_path)
+
     for filename in inner_files:
         file_path: str = os.path.join(target_path, filename)
 
