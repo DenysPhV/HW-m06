@@ -5,7 +5,7 @@ from normalize import normalize
 
 
 ARCHIVES = "archives"
-UNKNOWN = "unknown"
+UNKNOWN = "unknowns"
 
 CATEGORIES: Dict[str, List] = {
     "images": ['jpeg', 'png', 'jpg', 'svg'],
