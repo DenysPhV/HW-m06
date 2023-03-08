@@ -12,11 +12,6 @@ for cyr, lat in zip(CYRILLIC_SYMBOLS, TRANSLATION):
         TRANS[ord(cyr.upper())] = lat.upper()
 
 
-# def normalize(name: str) -> str:
-#         t_name = name.translate(TRANS)
-#         t_name = re.sub(r'\W', '_', t_name)
-#         return t_name
-
 def normalize(name: str) -> str:
         # we make transliteration of cyrillic letters to latin
         t_name = name.translate(TRANS)
